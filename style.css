@@ -3,14 +3,18 @@ body {
     padding: 0;
     display: flex;
     flex-direction: row;
+    font-size: 18px;
 }
 
-
+button {
+    padding: 0.5rem 1.3rem;
+    margin-top: 2rem;
+}
 
 .leaf {
     
     background-position: center;
-    object-fit: contain;
+    object-fit:contain;
     height: 100vh;
     margin: 0;
 }
@@ -20,28 +24,61 @@ body {
 }
 
 .main-container {
-    background: rosybrown;
-    width: 60%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 0 2rem;
+    
+ }
+
+.text, .form-container {
+    padding-top: 1rem;
+    padding-left: 2rem;
     
 }
 
-.text, .form-container, .bottom-container {
-    height: 33%;
-}
-
 .text {
-    margin-top: 10rem;
+    
+    background: #FDFCF6;
+    height: 35%;
+    
+    
 }
 
 .form-container {
     display: flex;
     flex-wrap: wrap;
+    background: #6d6881;
+    height: 35%;
+    padding-right: 20rem;
+    padding-bottom: 1.5rem;
+    
+    
+    
+}
+
+.bottom-container {
+    background: #FDFCF6;
+    
+    height: 35%;
+    padding-left: 2rem;
+    
+    
 }
 
 input, label {
-    display:block;
+    display: block;
+    margin-right: 2rem;
+    height: 1.2rem;
+    
+    
 }
+
+input {
+    width: 250px;
+}
+
+input:focus {
+    outline: none;
+    border:1px solid red;
+    box-shadow: 0 0 5px hsl(4, 91%, 32%);
+}
+
