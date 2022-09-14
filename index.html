@@ -9,7 +9,13 @@
 </head>
 <body>
     <div class="left-container">
-        <img class='leaf' src="images/leafs.avif">
+        <div class="hero-image">
+        <div class="black">
+            <img src='images/odin-logo.png' class="odin">
+            <h3>Fren form</h3>
+        </div>
+        </div>
+        
     </div>
     <div class="main-container">
         <div class="text">
@@ -33,10 +39,11 @@
                 <input type="number" id="phone">
             </label>
             <label for ='password' required>Password
-                <input type="password" id="password">
+                <input type="password" id="password" onkeyup='checkPassword()'>
             </label>
             <label for ='confirmation' required>Confirm password
-                <input type="password" id="confirmation">
+                <input type="password" id="confirmation" onkeyup='checkPassword()'>
+                <p id='no-match-password'></p>
             </label>
 
             
@@ -48,4 +55,5 @@
     </div>
     
 </body>
+<script src="index.js"></script>
 </html>
