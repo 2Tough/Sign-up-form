@@ -4,35 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
     <title>Sign up form</title>
 </head>
 <body>
-    <form>
-        <label for ='name'>
-            <input type="text" id="name">
-        </label>
-        <label for ='lname'>
-            <input type="text" id="lname">
-        </label>
-        <label for ='email'>
-            <input type="email" id="email">
-        </label>
-        <label for ='phone'>
-            <input type="number" id="phone">
-        </label>
-        <label for ='password'>
-            <input type="password" id="password">
-        </label>
-        <label for ='confirmation'>
-            <input type="password" id="confirmation">
-        </label>
-        <label>
-            <textarea></textarea>   
-        </label>
-        <button>Submit</button>
+    <div class="left-container">
+        <img class='leaf' src="images/leafs.avif">
+    </div>
+    <div class="main-container">
+        <div class="text">
+            <h3>This is not a real online service but could be if enough requests
+                are submitted. You know you need something like this in your life
+                to help you realize your deepest dreams. Sign up now to get started.
+            </h3>
+        </div>
 
-
-    </form>
+        <form>
+            <label for ='name'>
+                <input type="text" id="name">
+            </label>
+            <label for ='lname'>
+                <input type="text" id="lname">
+            </label>
+            <label for ='email'>
+                <input type="email" id="email">
+            </label>
+            <label for ='phone'>
+                <input type="number" id="phone">
+            </label>
+            <label for ='password'>
+                <input type="password" id="password">
+            </label>
+            <label for ='confirmation'>
+                <input type="password" id="confirmation">
+            </label>
+            <label>
+                <textarea></textarea>   
+            </label>
+            
+        </form>
+        <footer class="bottom-container">
+            <button>Create account</button>
+            <p>Already have an account? <span class="log">Log in</span></p>
+        </footer>
+    </div>
     
 </body>
 </html>
